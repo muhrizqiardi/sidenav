@@ -7,6 +7,6 @@
     "7zip": "^0.0.6"
   },
   "scripts": {
-    "pack-firefox": " 7z a \".\/packed\/sidenav-firefox.zip\" \".\/*\"  -x!\".git\" -x!\".\/packed\""
+    "pack-firefox": "zip -r -FS ./packed/sidenav-firefox.zip * --exclude '*.git*' '*packed*' '*node_modules*' 'package.json' 'yarn.lock' '*.gitignore*'"
   }
 }
