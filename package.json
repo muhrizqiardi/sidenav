@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "7zip": "^0.0.6"
+    "web-ext": "^6.2.0"
   },
   "scripts": {
-    "pack-firefox": "zip -r -FS ./packed/sidenav-firefox.zip * --exclude '*.git*' '*packed*' '*node_modules*' 'package.json' 'yarn.lock' '*.gitignore*'"
+    "start:firefox": "web-ext run"
   }
 }
