@@ -1,6 +1,12 @@
 {
-  "name": "firefox-sidenav",
+  "name": "sidenav",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "7zip": "^0.0.6"
+  },
+  "scripts": {
+    "pack-firefox": " 7z a \".\/packed\/sidenav-firefox.zip\" \".\/*\"  -x!\".git\" -x!\".\/packed\""
+  }
 }
